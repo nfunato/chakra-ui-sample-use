@@ -1,14 +1,15 @@
 import { memo, VFC } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import { Login } from "../components/pages/Login";
 
 export const Router: VFC = memo(() => {
+  // Routes is Formerly Switch
   return (
-    <Switch>
-      <Route>
+    <Routes>
+      <Route exact path="/">
         <Login />
       </Route>
-    </Switch>
+    </Routes>
   );
 });
