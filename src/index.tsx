@@ -12,3 +12,5 @@ ReactDom.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// ReactDom.render(<App />, document.querySelector("#root"));
